@@ -49,8 +49,8 @@ app.use('/api/objet', objetRoutes);
 app.use('/api/shop', shopRoutes);
 app.use('/api/articles', articlesRoutes);
 
-app.get('/', (req, res, next) => {
-    res.send({ message: 'Hello wordl!' });
+app.use('/', (req, res, next) => {
+    res.json({ message: 'Hello wordl!' });
 });
 
 // Route pour exposer la clé publique VAPID
