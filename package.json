@@ -4,8 +4,7 @@
   "description": "API du backend pour le projet de commerce electronique",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "RUBUZ",
   "license": "MIT",
