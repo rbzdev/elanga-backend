@@ -49,7 +49,7 @@ app.use('/api/objet', objetRoutes);
 app.use('/api/shop', shopRoutes);
 app.use('/api/articles', articlesRoutes);
 
-app.use('/', (req, res, next) => {
+app.get('/', (req, res, next) => {
     res.json({ message: 'Hello wordl!' });
 });
 
