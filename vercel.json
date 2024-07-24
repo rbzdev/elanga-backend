@@ -1,10 +1,16 @@
 {
     "version": 2,
-    "name": "elanga",
-    "builds":[
-        { "src": "server.js", "use": "@vercel/node" }
+    "builds": [
+      {
+        "src": "api/**/*.js",
+        "use": "@vercel/node"
+      }
     ],
     "routes": [
-        { "src": "/(.*)", "dest": "/server.js"}
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      }
     ]
-}
+  }
+  
